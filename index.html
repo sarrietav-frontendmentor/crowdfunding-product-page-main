@@ -236,6 +236,55 @@
         </p>
         <div>
           <input
+            id="pledge-no-reward"
+            class="peer hidden"
+            type="radio"
+            name="pledge"
+          />
+          <label
+            for="pledge-no-reward"
+            class="block rounded border border-gray-300 peer-checked:border-2 peer-checked:border-teal-500"
+          >
+            <div class="space-y-7 p-6">
+              <div class="flex items-center gap-4">
+                <div
+                  class="flex h-8 w-8 items-center justify-center rounded-full border border-gray-300"
+                >
+                  <div class="invisible h-4 w-4 rounded-full bg-teal-500"></div>
+                </div>
+                <div class="space-y-1">
+                  <h3 class="font-bold text-black">Pledge with no reward</h3>
+                </div>
+              </div>
+              <p>
+                Choose to support us without a reward if you simply believe in
+                our project. As a backer, you will be signed up to receive
+                product updates via email.
+              </p>
+            </div>
+            <div
+              class="hidden space-y-5 border-t-2 border-gray-300 p-6 text-center"
+            >
+              <label for="pledge-no-reward-amount">Enter your pledge</label>
+              <div class="relative flex items-center justify-between gap-4">
+                <div class="absolute left-5 font-bold text-neutral-400">$</div>
+                <input
+                  type="number"
+                  id="pledge-no-reward-amount"
+                  name="pledge_amount"
+                  class="w-1/2 rounded-full border border-gray-300 px-8 py-3 font-bold text-black"
+                />
+                <button
+                  class="submit flex-1 rounded-full bg-teal-500 py-3 px-7 font-medium text-white"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div>
+          <input
             id="pledge-bamboo"
             class="peer hidden"
             type="radio"
