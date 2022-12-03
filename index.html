@@ -11,9 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Crowdfunding product page</title>
-
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-neutral-100 text-gray-500">
@@ -24,17 +22,33 @@
         alt="A computer with a keyboard"
       />
     </div>
-    <div class="px-5 py-7">
-      <nav
-        class="absolute top-0 left-0 z-10 flex w-full items-center justify-between px-5 py-7"
+    <nav
+      class="absolute top-0 left-0 z-20 flex w-full items-center justify-between px-5 py-7"
+    >
+      <img class="h-auto max-w-full" src="./images/logo.svg" alt="logo" />
+      <img
+        class="block h-3/4 max-w-xl"
+        src="./images/icon-hamburger.svg"
+        alt="menu"
+      />
+    </nav>
+    <div class="fixed top-0 bottom-0 left-0 right-0 z-10 bg-black/40"></div>
+    <div class="relative px-5 py-7">
+      <div
+        class="absolute -top-52 right-0 left-0 z-20 mx-5 rounded-md bg-white shadow"
       >
-        <img class="h-auto max-w-full" src="./images/logo.svg" alt="logo" />
-        <img
-          class="block h-3/4 max-w-xl"
-          src="./images/icon-hamburger.svg"
-          alt="menu"
-        />
-      </nav>
+        <ul>
+          <li class="border-b border-slate-200 p-5">
+            <a class="font-medium text-black">About</a>
+          </li>
+          <li class="border-b border-slate-200 p-5">
+            <a class="font-medium text-black">Discover</a>
+          </li>
+          <li class="p-5">
+            <a class="font-medium text-black">Get Started</a>
+          </li>
+        </ul>
+      </div>
       <main class="-mt-20 space-y-6">
         <section
           class="relative flex flex-col items-center justify-center gap-4 rounded border border-gray-200 bg-white px-6 py-8 text-center"
@@ -158,19 +172,6 @@
             </button>
           </div>
         </section>
-        <div class="top-10 rounded-md bg-white">
-          <ul>
-            <li class="border-b border-slate-200 p-5">
-              <a class="font-medium text-black">About</a>
-            </li>
-            <li class="border-b border-slate-200 p-5">
-              <a class="font-medium text-black">Discover</a>
-            </li>
-            <li class="p-5">
-              <a class="font-medium text-black">Get Started</a>
-            </li>
-          </ul>
-        </div>
       </main>
     </div>
   </body>

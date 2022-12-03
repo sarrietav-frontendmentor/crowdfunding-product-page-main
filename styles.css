@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -545,8 +549,53 @@ video {
   top: 2.5rem;
 }
 
+.-top-10 {
+  top: -2.5rem;
+}
+
+.-top-14 {
+  top: -3.5rem;
+}
+
+.-top-4 {
+  top: -1rem;
+}
+
+.-top-40 {
+  top: -10rem;
+}
+
+.-top-5 {
+  top: -1.25rem;
+}
+
+.-top-56 {
+  top: -14rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.-top-52 {
+  top: -13rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .-mt-20 {
@@ -587,6 +636,10 @@ video {
 
 .h-3 {
   height: 0.75rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-full {
@@ -733,6 +786,19 @@ video {
   background-color: rgb(120 113 108 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-black\/30 {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+.bg-black\/40 {
+  background-color: rgb(0 0 0 / 0.4);
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -825,4 +891,10 @@ video {
 
 .opacity-40 {
   opacity: 0.4;
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
