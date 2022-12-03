@@ -28,6 +28,16 @@
         });
       });
     </script>
+
+    <style>
+      input:checked + label .invisible {
+        visibility: visible;
+      }
+
+      input:checked + label .hidden {
+        display: block;
+      }
+    </style>
   </head>
   <body class="bg-neutral-100 text-gray-500">
     <div>
@@ -139,7 +149,7 @@
             USB sticks to be stored under the stand.
           </p>
 
-          <div class="space-y-7 rounded border border-gray-400 p-6">
+          <div class="space-y-7 rounded border border-gray-300 p-6">
             <div class="space-y-1">
               <h3 class="font-bold text-black">Bamboo Stand</h3>
               <p class="font-medium text-teal-500">Pledge $25 or more</p>
@@ -157,7 +167,7 @@
             </button>
           </div>
 
-          <div class="space-y-7 rounded border border-gray-400 p-6">
+          <div class="space-y-7 rounded border border-gray-300 p-6">
             <div class="space-y-1">
               <h3 class="font-bold text-black">Black Edition Stand</h3>
               <p class="font-medium text-teal-500">Pledge $75 or more</p>
@@ -174,7 +184,7 @@
               <span class="font-bold">Select Reward</span>
             </button>
           </div>
-          <div class="space-y-7 rounded border border-gray-400 p-6 opacity-40">
+          <div class="space-y-7 rounded border border-gray-300 p-6 opacity-40">
             <div class="space-y-1">
               <h3 class="font-bold text-black">Mahogany Special Edition</h3>
               <p class="font-medium text-teal-500">Pledge $200 or more</p>
@@ -193,6 +203,188 @@
           </div>
         </section>
       </main>
+      <div class="space-y-7 rounded-lg bg-white px-5 py-7">
+        <div class="flex items-center justify-between">
+          <h1 class="text-lg font-bold text-black">Back this project</h1>
+          <img
+            src="./images/icon-close-modal.svg"
+            class="block h-3/4 max-w-full"
+            alt="Close button"
+          />
+        </div>
+        <p>
+          Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
+          the world?
+        </p>
+        <div>
+          <input
+            id="pledge-bamboo"
+            class="peer hidden"
+            type="radio"
+            name="pledge"
+          />
+          <label
+            for="pledge-bamboo"
+            class="block rounded border border-gray-300 peer-checked:border-2 peer-checked:border-teal-500"
+          >
+            <div class="space-y-7 p-6">
+              <div class="flex items-center gap-4">
+                <div
+                  class="flex h-8 w-8 items-center justify-center rounded-full border border-gray-300"
+                >
+                  <div class="invisible h-4 w-4 rounded-full bg-teal-500"></div>
+                </div>
+                <div class="space-y-1">
+                  <h3 class="font-bold text-black">Bamboo Stand</h3>
+                  <p class="font-medium text-teal-500">Pledge $25 or more</p>
+                </div>
+              </div>
+              <p>
+                You get an ergonomic stand made of natural bamboo. You've helped
+                us launch our promotional campaign, and you'll be added to a
+                special Backer member list.
+              </p>
+              <p><span class="text-3xl font-bold text-black">101</span> left</p>
+            </div>
+            <div
+              class="hidden space-y-5 border-t-2 border-gray-300 p-6 text-center"
+            >
+              <label for="pledge-bamboo-amount" class=""
+                >Enter your pledge</label
+              >
+              <div class="relative flex items-center justify-between gap-4">
+                <div class="absolute left-5 font-bold text-neutral-400">$</div>
+                <input
+                  type="number"
+                  id="pledge-bamboo-amount"
+                  name="pledge_amount"
+                  class="w-1/2 rounded-full border border-gray-300 px-8 py-3 font-bold text-black"
+                />
+                <button
+                  class="submit flex-1 rounded-full bg-teal-500 py-3 px-7 font-medium text-white"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div>
+          <input
+            id="pledge-black"
+            class="peer hidden"
+            type="radio"
+            name="pledge"
+          />
+          <label
+            for="pledge-black"
+            class="block rounded border border-gray-300 peer-checked:border-2 peer-checked:border-teal-500"
+          >
+            <div class="space-y-7 p-6">
+              <div class="flex items-center gap-4">
+                <div
+                  class="flex h-8 w-8 items-center justify-center rounded-full border border-gray-300"
+                >
+                  <div class="invisible h-4 w-4 rounded-full bg-teal-500"></div>
+                </div>
+                <div class="space-y-1">
+                  <h3 class="font-bold text-black">
+                    Black Special Edition Stand
+                  </h3>
+                  <p class="font-medium text-teal-500">Pledge $75 or more</p>
+                </div>
+              </div>
+              <p>
+                You get a Black Special Edition computer stand and a personal
+                thank you. You'll be added to our Backer member list. Shipping
+                is included.
+              </p>
+              <p>
+                <span class="text-3xl font-bold text-black"> 64 </span> left
+              </p>
+            </div>
+            <div
+              class="hidden space-y-5 border-t-2 border-gray-300 p-6 text-center"
+            >
+              <label for="pledge-black-amount" class=""
+                >Enter your pledge</label
+              >
+              <div class="relative flex items-center justify-between gap-4">
+                <div class="absolute left-5 font-bold text-neutral-400">$</div>
+                <input
+                  type="number"
+                  id="pledge-black-amount"
+                  name="pledge_amount"
+                  class="w-1/2 rounded-full border border-gray-300 px-8 py-3 font-bold text-black"
+                />
+                <button
+                  class="submit flex-1 rounded-full bg-teal-500 py-3 px-7 font-medium text-white"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div>
+          <input
+            id="pledge-mahogany"
+            class="peer hidden"
+            type="radio"
+            name="pledge"
+            disabled
+          />
+          <label
+            for="pledge-mahogany"
+            class="block rounded border border-gray-300 opacity-40 peer-checked:border-2 peer-checked:border-teal-500"
+          >
+            <div class="space-y-7 p-6">
+              <div class="flex items-center gap-4">
+                <div
+                  class="flex h-8 w-9 items-center justify-center rounded-full border border-gray-300"
+                >
+                  <div class="invisible h-4 w-4 rounded-full bg-teal-500"></div>
+                </div>
+                <div class="space-y-1">
+                  <h3 class="font-bold text-black">
+                    Mahogany Special Edition Stand
+                  </h3>
+                  <p class="font-medium text-teal-500">Pledge $200 or more</p>
+                </div>
+              </div>
+              <p>
+                You get two Special Edition Mahogany stands, a Backer T-Shirt,
+                and a personal thank you. You'll be added to our Backer member
+                list. Shipping is included.
+              </p>
+              <p><span class="text-3xl font-bold text-black"> 0 </span> left</p>
+            </div>
+            <div
+              class="hidden space-y-5 border-t-2 border-gray-300 p-6 text-center"
+            >
+              <label for="pledge-mahogany-amount" class=""
+                >Enter your pledge</label
+              >
+              <div class="relative flex items-center justify-between gap-4">
+                <div class="absolute left-5 font-bold text-neutral-400">$</div>
+                <input
+                  type="number"
+                  id="pledge-mahogany-amount"
+                  name="pledge_amount"
+                  class="w-1/2 rounded-full border border-gray-300 px-8 py-3 font-bold text-black"
+                  disabled
+                />
+                <button
+                  class="submit flex-1 rounded-full bg-teal-500 py-3 px-7 font-medium text-white"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
     </div>
   </body>
 </html>
