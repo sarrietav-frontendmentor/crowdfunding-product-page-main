@@ -71,24 +71,39 @@
   </head>
   <body class="bg-neutral-100 text-gray-500">
     <div
-      class="h-72 w-full bg-[url('./images/image-hero-mobile.jpg')] bg-cover"
+      class="h-72 w-full bg-[url('./images/image-hero-mobile.jpg')] bg-cover lg:h-[35vh] lg:bg-[url('./images/image-hero-desktop.jpg')] lg:bg-center"
     ></div>
     <nav
-      class="absolute top-0 left-0 z-20 flex w-full items-center justify-between px-5 py-7"
+      class="absolute top-0 left-0 z-20 flex w-full items-center justify-between px-5 py-7 lg:px-44 lg:py-10"
     >
       <img class="h-auto max-w-full" src="./images/logo.svg" alt="logo" />
-      <img
-        id="icon-hamburguer"
-        class="block h-3/4 max-w-xl"
-        src="./images/icon-hamburger.svg"
-        alt="menu"
-      />
+      <div class="lg:hidden">
+        <img
+          id="icon-hamburguer"
+          class="block h-3/4 max-w-xl"
+          src="./images/icon-hamburger.svg"
+          alt="menu"
+        />
+      </div>
+      <div class="hidden lg:block">
+        <ul class="flex gap-8">
+          <li>
+            <a class="font-medium text-white">About</a>
+          </li>
+          <li>
+            <a class="font-medium text-white">Discover</a>
+          </li>
+          <li>
+            <a class="font-medium text-white">Get Started</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div
       id="overlay"
       class="fixed top-0 bottom-0 left-0 right-0 z-10 hidden bg-black/40"
     ></div>
-    <div class="relative px-5 py-7">
+    <div class="relative px-5 py-7 lg:px-96">
       <div
         id="menu"
         class="absolute -top-52 right-0 left-0 z-20 mx-5 hidden rounded-md bg-white shadow"
@@ -105,7 +120,7 @@
           </li>
         </ul>
       </div>
-      <main class="-mt-20 space-y-6">
+      <main class="-mt-20 space-y-6 xl:-mt-32">
         <section
           class="relative flex flex-col items-center justify-center gap-4 rounded border border-gray-200 bg-white px-6 py-8 text-center"
         >
