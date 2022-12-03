@@ -26,6 +26,23 @@
           $("#menu").toggleClass("hidden");
           $("#overlay").toggleClass("hidden");
         });
+
+        $("#overlay").click(() => {
+          $("#icon-hamburguer").attr("src", "./images/icon-hamburger.svg");
+          $("#menu").addClass("hidden");
+          $("#overlay").toggleClass("hidden");
+          $("#modal").addClass("hidden");
+        });
+
+        $("#back-this-project").click(() => {
+          $("#overlay").toggleClass("hidden");
+          $("#modal").toggleClass("hidden");
+        });
+
+        $("#close-modal").click(() => {
+          $("#overlay").toggleClass("hidden");
+          $("#modal").toggleClass("hidden");
+        });
       });
     </script>
 
@@ -95,6 +112,7 @@
           </p>
           <div class="flex w-full justify-between gap-3">
             <button
+              id="back-this-project"
               class="flex-1 rounded-full bg-teal-500 px-8 font-medium text-white"
             >
               Back this project
@@ -203,10 +221,14 @@
           </div>
         </section>
       </main>
-      <div class="space-y-7 rounded-lg bg-white px-5 py-7">
+      <div
+        id="modal"
+        class="absolute -top-52 right-0 left-0 z-20 m-5 hidden space-y-7 rounded-lg bg-white px-5 py-7"
+      >
         <div class="flex items-center justify-between">
           <h1 class="text-lg font-bold text-black">Back this project</h1>
           <img
+            id="close-modal"
             src="./images/icon-close-modal.svg"
             class="block h-3/4 max-w-full"
             alt="Close button"
