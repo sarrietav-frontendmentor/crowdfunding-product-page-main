@@ -140,18 +140,25 @@
           <div class="flex w-full justify-between gap-3 lg:mt-5">
             <button
               id="back-this-project"
-              class="flex-1 rounded-full bg-teal-500 px-8 font-medium text-white lg:flex-none"
+              class="flex-1 rounded-full bg-teal-500 px-8 font-medium text-white transition active:bg-teal-800 lg:flex-none"
             >
               Back this project
             </button>
             <button
-              class="items-center justify-between lg:flex lg:gap-4 lg:rounded-full lg:bg-gray-200 lg:pr-6"
+              class="group items-center justify-between lg:flex lg:gap-4 lg:rounded-full lg:bg-gray-200 lg:pr-6"
             >
-              <img
-                src="./images/icon-bookmark.svg"
-                class="h-auto max-w-full"
-                alt="bookmark"
-              />
+              <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle
+                    class="transition group-active:fill-neutral-500"
+                    fill="#2F2F2F"
+                    cx="28"
+                    cy="28"
+                    r="28"
+                  />
+                  <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+                </g>
+              </svg>
               <span class="hidden font-bold text-gray-500 lg:block">
                 Bookmark
               </span>
@@ -224,7 +231,7 @@
             >
               <p><span class="text-3xl font-bold text-black">101</span> left</p>
               <button
-                class="rounded-full bg-teal-500 px-8 py-4 font-medium text-white"
+                class="rounded-full bg-teal-500 px-8 py-4 font-medium text-white transition active:bg-teal-800"
               >
                 <span class="font-bold">Select Reward</span>
               </button>
@@ -248,7 +255,7 @@
                 <span class="text-3xl font-bold text-black"> 64 </span> left
               </p>
               <button
-                class="rounded-full bg-teal-500 px-8 py-4 font-medium text-white"
+                class="rounded-full bg-teal-500 px-8 py-4 font-medium text-white transition active:bg-teal-800"
               >
                 <span class="font-bold">Select Reward</span>
               </button>
@@ -535,35 +542,13 @@
                 <span class="text-3xl font-bold text-black"> 0 </span> left
               </p>
             </div>
-            <div
-              class="pledge-form hidden space-y-5 border-t-2 border-gray-300 p-6 text-center"
-            >
-              <label for="pledge-mahogany-amount" class=""
-                >Enter your pledge</label
-              >
-              <div class="relative flex items-center justify-between gap-4">
-                <div class="absolute left-5 font-bold text-neutral-400">$</div>
-                <input
-                  type="number"
-                  id="pledge-mahogany-amount"
-                  name="pledge_amount"
-                  class="w-1/2 rounded-full border border-gray-300 px-8 py-3 font-bold text-black lg:px-10"
-                  disabled
-                />
-                <button
-                  class="submit flex-1 rounded-full bg-teal-500 py-3 px-7 font-medium text-white"
-                >
-                  Continue
-                </button>
-              </div>
-            </div>
           </label>
         </div>
       </div>
       <!-- Modal completed -->
       <div
         id="modal-completed"
-        class="absolute lg:mx-auto lg:my-0 -top-44 right-0 left-0 z-20 m-5 hidden max-w-xl flex-col items-center gap-7 rounded-lg bg-white p-6 py-8 text-center"
+        class="absolute -top-44 right-0 left-0 z-20 m-5 hidden max-w-xl flex-col items-center gap-7 rounded-lg bg-white p-6 py-8 text-center lg:mx-auto lg:my-0"
       >
         <img src="./images/icon-check.svg" alt="Check icon" />
         <h1 class="text-xl font-bold text-black">Thanks for your support</h1>
