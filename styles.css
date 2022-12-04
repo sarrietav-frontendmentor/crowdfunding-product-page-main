@@ -844,10 +844,6 @@ select {
   flex-grow: 1;
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -987,11 +983,6 @@ select {
 .bg-stone-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(120 113 108 / var(--tw-bg-opacity));
-}
-
-.bg-teal-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 94 89 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/images\/image-hero-mobile\.jpg\'\)\] {
@@ -1142,10 +1133,6 @@ input[type="checkbox"]:checked + svg path {
   fill: #fff;
 }
 
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
-}
-
 .hover\:bg-teal-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(17 94 89 / var(--tw-bg-opacity));
@@ -1166,11 +1153,6 @@ input[type="checkbox"]:checked + svg path {
   --tw-ring-color: rgb(20 184 166 / var(--tw-ring-opacity));
 }
 
-.active\:bg-teal-800:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 94 89 / var(--tw-bg-opacity));
-}
-
 .group:hover .group-hover\:border-teal-500 {
   --tw-border-opacity: 1;
   border-color: rgb(20 184 166 / var(--tw-border-opacity));
@@ -1185,10 +1167,6 @@ input[type="checkbox"]:checked + svg path {
   color: rgb(20 184 166 / var(--tw-text-opacity));
 }
 
-.group:active .group-active\:fill-neutral-500 {
-  fill: #737373;
-}
-
 .peer:checked ~ .peer-checked\:border-2 {
   border-width: 2px;
 }
@@ -1200,11 +1178,6 @@ input[type="checkbox"]:checked + svg path {
 
 .peer:checked ~ .peer-checked\:fill-teal-800 {
   fill: #115e59;
-}
-
-.peer:checked ~ .peer-checked\:text-teal-800 {
-  --tw-text-opacity: 1;
-  color: rgb(17 94 89 / var(--tw-text-opacity));
 }
 
 .peer:checked ~ .peer-checked\:text-teal-700 {
