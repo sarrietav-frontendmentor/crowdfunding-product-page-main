@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        commissioner: ["Commissioner", "sans-serif"],
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),
