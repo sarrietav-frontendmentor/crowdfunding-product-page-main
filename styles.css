@@ -844,6 +844,10 @@ select {
   flex-grow: 1;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
