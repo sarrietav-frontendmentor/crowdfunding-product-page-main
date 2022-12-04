@@ -33,6 +33,7 @@
           $("#overlay").toggleClass("hidden");
           $("#modal").addClass("hidden");
           $("#modal-completed").addClass("hidden");
+          $("[type='radio']").prop("checked", false);
         });
 
         $("#back-this-project").click(() => {
@@ -43,12 +44,14 @@
         $("#close-modal").click(() => {
           $("#overlay").toggleClass("hidden");
           $("#modal").toggleClass("hidden");
+          $("[type='radio']").prop("checked", false);
         });
 
         $(".submit").click(() => {
           $("#modal").toggleClass("hidden");
           $("#modal-completed").addClass("flex");
           $("#modal-completed").removeClass("hidden");
+          $("[type='radio']").prop("checked", false);
         });
 
         $("#modal-completed #modal-completed-close").click(() => {
