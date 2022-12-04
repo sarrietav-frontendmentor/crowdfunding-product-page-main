@@ -748,26 +748,6 @@ select {
   margin-right: 1.25rem;
 }
 
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 .-mt-20 {
   margin-top: -5rem;
 }
@@ -852,18 +832,6 @@ select {
   max-width: 36rem;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -934,10 +902,6 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.justify-self-end {
-  justify-self: end;
 }
 
 .rounded-md {
@@ -1174,20 +1138,16 @@ select {
 }
 
 @media (min-width: 1024px) {
-  .lg\:left-10 {
-    left: 2.5rem;
-  }
-
-  .lg\:left-0 {
-    left: 0px;
+  .lg\:left-40 {
+    left: 10rem;
   }
 
   .lg\:left-4 {
     left: 1rem;
   }
 
-  .lg\:left-40 {
-    left: 10rem;
+  .lg\:left-44 {
+    left: 11rem;
   }
 
   .lg\:mx-auto {
@@ -1240,14 +1200,6 @@ select {
     flex: none;
   }
 
-  .lg\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .lg\:flex-grow {
-    flex-grow: 1;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1266,10 +1218,6 @@ select {
 
   .lg\:gap-12 {
     gap: 3rem;
-  }
-
-  .lg\:gap-0 {
-    gap: 0px;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1318,6 +1266,16 @@ select {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:pr-6 {
