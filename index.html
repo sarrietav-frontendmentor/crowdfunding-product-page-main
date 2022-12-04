@@ -144,25 +144,36 @@
             >
               Back this project
             </button>
-            <button
-              class="group items-center justify-between lg:flex lg:gap-4 lg:rounded-full lg:bg-gray-200 lg:pr-6"
-            >
-              <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" fill-rule="evenodd">
-                  <circle
-                    class="transition group-active:fill-neutral-500"
-                    fill="#2F2F2F"
-                    cx="28"
-                    cy="28"
-                    r="28"
-                  />
-                  <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
-                </g>
-              </svg>
-              <span class="hidden font-bold text-gray-500 lg:block">
-                Bookmark
-              </span>
-            </button>
+            <div>
+              <label
+                for="bookmark"
+                class="group items-center justify-between lg:flex lg:gap-4 lg:rounded-full lg:bg-gray-200 lg:pr-6"
+              >
+                <input
+                  type="checkbox"
+                  name=""
+                  id="bookmark"
+                  class="peer hidden"
+                />
+                <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle
+                      class="transition group-active:fill-neutral-500 peer-checked:fill-teal-800"
+                      fill="#2F2F2F"
+                      cx="28"
+                      cy="28"
+                      r="28"
+                    />
+                    <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+                  </g>
+                </svg>
+                <span
+                  class="hidden font-bold text-gray-500 peer-checked:text-teal-700 lg:block"
+                >
+                  Bookmark
+                </span>
+              </label>
+            </div>
           </div>
         </section>
 

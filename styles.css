@@ -989,14 +989,6 @@ select {
   background-size: cover;
 }
 
-.fill-gray-500 {
-  fill: #6b7280;
-}
-
-.fill-stone-800 {
-  fill: #292524;
-}
-
 .p-5 {
   padding: 1.25rem;
 }
@@ -1129,6 +1121,14 @@ select {
   transition-duration: 150ms;
 }
 
+input[type="checkbox"]:checked + svg circle {
+  fill: #0f766e;
+}
+
+input[type="checkbox"]:checked + svg path {
+  fill: #fff;
+}
+
 .focus\:border-none:focus {
   border-style: none;
 }
@@ -1149,38 +1149,8 @@ select {
   background-color: rgb(17 94 89 / var(--tw-bg-opacity));
 }
 
-.group:active .group-active\:bg-gray-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.group:active .group-active\:fill-gray-300 {
-  fill: #d1d5db;
-}
-
-.group:active .group-active\:fill-gray-800 {
-  fill: #1f2937;
-}
-
-.group:active .group-active\:fill-stone-300 {
-  fill: #d6d3d1;
-}
-
-.group:active .group-active\:fill-gray-400 {
-  fill: #9ca3af;
-}
-
-.group:active .group-active\:fill-neutral-400 {
-  fill: #a3a3a3;
-}
-
 .group:active .group-active\:fill-neutral-500 {
   fill: #737373;
-}
-
-.group:active .group-active\:text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .peer:checked ~ .peer-checked\:border-2 {
@@ -1192,15 +1162,21 @@ select {
   border-color: rgb(20 184 166 / var(--tw-border-opacity));
 }
 
+.peer:checked ~ .peer-checked\:fill-teal-800 {
+  fill: #115e59;
+}
+
+.peer:checked ~ .peer-checked\:text-teal-800 {
+  --tw-text-opacity: 1;
+  color: rgb(17 94 89 / var(--tw-text-opacity));
+}
+
+.peer:checked ~ .peer-checked\:text-teal-700 {
+  --tw-text-opacity: 1;
+  color: rgb(15 118 110 / var(--tw-text-opacity));
+}
+
 @media (min-width: 1024px) {
-  .lg\:left-40 {
-    left: 10rem;
-  }
-
-  .lg\:left-4 {
-    left: 1rem;
-  }
-
   .lg\:left-44 {
     left: 11rem;
   }
@@ -1321,11 +1297,6 @@ select {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .lg\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
   }
 
   .lg\:px-12 {

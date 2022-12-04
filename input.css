@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input[type="checkbox"]:checked + svg circle {
+  @apply fill-teal-700;
+}
+
+input[type="checkbox"]:checked + svg path {
+  @apply fill-white;
+}
