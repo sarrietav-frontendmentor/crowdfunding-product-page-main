@@ -122,7 +122,7 @@
       </div>
       <main class="-mt-20 space-y-6 xl:-mt-32">
         <section
-          class="relative flex flex-col items-center justify-center gap-4 rounded border border-gray-200 bg-white px-6 py-8 text-center"
+          class="relative flex flex-col items-center justify-center gap-4 rounded border border-gray-200 bg-white px-6 py-8 text-center lg:px-11"
         >
           <div class="absolute -top-7">
             <img src="./images/logo-mastercraft.svg" alt="Mastercraft logo" />
@@ -134,19 +134,24 @@
             A beautiful & handcrafted monitor stand to reduce neck and eye
             strain.
           </p>
-          <div class="flex w-full justify-between gap-3">
+          <div class="flex w-full justify-between gap-3 lg:mt-5">
             <button
               id="back-this-project"
-              class="flex-1 rounded-full bg-teal-500 px-8 font-medium text-white"
+              class="flex-1 rounded-full bg-teal-500 px-8 font-medium text-white lg:flex-none"
             >
               Back this project
             </button>
-            <button>
+            <button
+              class="items-center justify-between lg:flex lg:gap-4 lg:rounded-full lg:bg-gray-200 lg:pr-6"
+            >
               <img
                 src="./images/icon-bookmark.svg"
                 class="h-auto max-w-full"
                 alt="bookmark"
               />
+              <span class="hidden font-bold text-gray-500 lg:block">
+                Bookmark
+              </span>
             </button>
           </div>
         </section>
